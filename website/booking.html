@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;1,300&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_main.css">
+    <title>Lunette Bookings</title>
+</head>
+<body class="booking">
+    <nav id="nav-bar">
+        <div id="logo"><a href=index.html>LUNETTE</a></div>
+        <ul id="nav-bar-items">
+            <li><a href=dining.html>Dining</a></li>
+            <li><a href=accommodation.html>Accommodation</a></li>
+            <li><a href=moon_walking.html>Moon Walking</a></li>
+            <li><a href=about.html>About Us</a></li>
+            <li><a href=contact.html>Contact Us</a></li>
+            <li><a href=faq.html>FAQ</a></li>
+            <li><a href=booking.html class="active">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <header id="page-header">
+        <section id="page-header-content">
+            <h1>Booking</h1>
+        </section>
+    </header>
+
+    <section class="content">
+        <div class="form">
+            <h1>Booking Details</h1>
+            <form>
+                <fieldset>
+                    <div class="form-item">
+                        <label for="form-first-name">First Name (required):</label>
+                        <div class="form-element">
+                            <input type="text" name="firstName" id="form-first-name" placeholder="First name only" />
+                        </div>
+                    </div>
+        
+                    <div class="form-item">
+                        <label for="form-last-name">Last Name (required):</label>
+                        <div class="form-element">
+                            <input type="text" name="lastName" id="form-last-name" placeholder="Last name only" />
+                        </div>
+                    </div>
+    
+                    <div class="form-item">
+                        <label for="form-email">Email (required):</label>
+                        <div class="form-element">
+                            <input type="text" name="email" id="form-email" placeholder="something@example.com" />
+                        </div>
+                    </div>
+    
+                    <div class="form-item">
+                        <label for="form-phone">Phone Number (optional):</label>
+                        <div class="form-element">
+                            <input type="text" name="phone" id="form-phone" placeholder="(optional)" />
+                        </div>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="form-people-number">Number of People (required):</label>
+                        <div class="form-element">
+                            <input type="number" name="people" id="form-people-number" placeholder="#" />
+                        </div>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="form-room">Room Type:</label>
+                        <div class="form-element">
+                            <select id="form-room">
+                                <option value="blank">-</option>
+                                <option value="queen">Queen Bedroom</option>
+                                <option value="suite">Suite</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="form-start-date">Start Date:</label>
+                        <div class="form-element">
+                            <input type="date" name="start-date" id="form-start-date"/>
+                        </div>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="form-end-date">End Date</label>
+                        <div class="form-element">
+                            <input type="date" name="end-date" id="form-end-date"/>
+                        </div>
+                    </div>
+
+                    
+                    <button type="submit">Send</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <script src="js/booking.js"></script>
+</body>
+</html>

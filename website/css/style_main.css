@@ -1,0 +1,316 @@
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: #212529;
+    color: white;
+}
+
+/* Navigation Bar */
+
+#nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: inline-block;
+	background-color: #212529e7;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#logo {
+    float: left;
+    margin: 0;
+    padding: 0%;
+    padding-left: 1%;
+}
+
+#logo a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    color: #F8F9FA;
+}
+
+#logo a:hover {
+    background: none;
+}
+
+#nav-bar-items {
+    list-style-type: none;
+    float: right;
+    margin: 0;
+}
+
+#nav-bar-items li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+#nav-bar-items a {
+    display: inline-block;
+    color: #F8F9FA;
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-shadow: #212529 (0 2px 0);
+	text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.1em 1em;
+}
+
+#nav-bar-items a.active {
+    background: #495057;
+}
+
+#nav-bar-items a:hover, a.active {
+	background: #6C757D;
+    padding: 1.1em 1em;
+}
+
+
+
+/* Page Header */
+
+#page-header-content {
+    background: #dee2e6b4;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    padding-top: 8%;
+    padding-bottom: 4%;
+    text-align: center;
+}
+
+#page-header-content h1 {
+    font-family: 'Raleway';
+    font-size: 3em;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 1px solid;
+    padding: 0.2em;
+    width: fit-content;
+    margin: auto;
+}
+
+body.accommodation #page-header {
+    background: url(../images/accommodation.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 60%;
+}
+
+body.dining #page-header {
+    background: url(../images/dining.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 60%;
+}
+
+
+body.moon-walking #page-header {
+    background: url(../images/moonwalking.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 60%;
+}
+
+body.about #page-header {
+    background: url(../images/moon.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 60%;
+}
+
+body.faq #page-header {
+    background: url(../images/question.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+/* information cards */
+
+#information {
+    display: block;
+    width: 100%;
+}
+
+#information article.info-item {
+    background: #dee2e6;
+    display: flex;
+    align-items: center;
+    margin: 2% 5%;
+    color: black;
+}
+
+#information img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
+article.info-item div.info-content {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+article.info-item h1 {
+    font-family: 'Roboto';
+    font-size: 1.6em;
+}
+
+article.info-item p {
+    font-family: 'Raleway';
+    font-size: 1em;
+    font-weight: 500;
+}
+
+div.info-content ul {
+    list-style-type: none;
+    font-family: 'Raleway';
+    font-size: 1em;
+    font-weight: 500;
+}
+
+/* FAQ */
+
+#questions {
+    background: #dee2e6;
+    color: black;
+    margin: 2%;
+    padding: 2%;
+}
+
+#questions div.qa-box {
+    background: #6C757D;
+    border-radius: 10px;
+    padding: 1% 1%;
+    margin: 1%;
+    cursor: pointer;
+}
+
+#questions div.question-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#questions div.qa-box:hover {
+    background: #ADB5BD;
+}
+
+
+#questions h1.question, .question-bar p.symbol {
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    font-size: 2em;
+    margin: 0%;
+}
+
+#questions p.answer {
+    background: #495057;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Raleway';
+    font-size: 1em;
+    font-weight: 500;
+    position: relative;
+    padding: 1%;
+    margin: 1% 0;
+    display: none;
+}
+
+body section.content {
+    background: #dee2e6;
+    margin: 2%;
+}
+
+.form {
+    margin: 2%;
+    padding: 2%;
+}
+
+div.form h1 {
+    font-family: 'Roboto';
+    font-size: 1.6em;
+    color: black;
+}
+
+fieldset .form-item {
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    align-items: center;
+}
+
+#message {
+    align-items: flex-start;
+}
+
+fieldset .form-item > label {
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: black;
+    width: 20%;
+    padding-right: 2em;
+    text-align: right;
+}
+
+fieldset .form-item .form-element {
+    width: 20%;
+}
+#message .form-element  {
+    width: 70%;
+}
+
+fieldset .form-item .form-element > label {
+	display: block;
+}
+
+input[type=text], input[type=number], textarea, select, input[type=date] {
+    font-family: 'Raleway';
+    box-shadow: rgba(0,0,0,0.15) 3px 3px 5px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+#message .form-element textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+.form button {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 1em;
+    background: #495057;
+    color: white;
+    box-shadow: none;
+    border: none;
+    float: right;
+    width: fit-content;
+    padding: 1%;
+    cursor: pointer;
+}
+.form button:hover {
+    background: #ADB5BD;
+    color: black;
+}
+
+
+input[type=text].error, input[type=number].error, select.error {
+	border-color: red;
+}
